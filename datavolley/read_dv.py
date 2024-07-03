@@ -119,8 +119,6 @@ class DataVolley:
         # Creiamo un dizionario mappando la prima colonna (codice) alla quinta colonna (descrizione)
         try:
             play_dict = dict(zip(separated_data[0], separated_data[4]))
-            # Stampa il dizionario per verificarne il contenuto
-            print(play_dict)
         except KeyError as e:
             print(f"Errore: {e}. Verifica che le colonne esistano e siano correttamente indicizzate.")
 
